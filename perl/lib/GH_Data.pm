@@ -87,6 +87,10 @@ sub get_origin_url {
 
 sub set_creds {
   my ($uname, $email) = @_;
+  if (!defined($email)) {
+    croak("'$uname' - unknown argument") if !exists($Github_Data->{$uname});
+    $email = $Github_Data->{$uname}
+  }
   run_cmd("git config credential.helper store");
   run_cmd("git config user.email $email");
   run_cmd("git config user.name $uname");
