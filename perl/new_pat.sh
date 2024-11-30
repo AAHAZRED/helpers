@@ -14,10 +14,12 @@ use Run_Helper qw(run_cmd);
 @ARGV == 0 or die("This script takes no arguments");
 
 my $URL = get_gh_url();
-my $UName = (get_usr_data_from_url($URL))[0];
+my ($UName, $Repo) = get_usr_data_from_url($URL);
 my $PAT = (github_data($UName))[1];
-$URL =~ m!^(https://.*?:).*?(\@github\.com\S*+)$! or die("$URL: invalid URL");
-run_cmd("git remote set-url origin $1${PAT}$2");
+$Repo .= ".git" unless $Repo =~ /\.git$/;
+my $New_URL = "https://${UName}:${PAT}\@github.com/${UName}/$Repo";
+run_cmd("git remote set-url origin $New_URL");
+
 
 
 __END__
