@@ -73,21 +73,20 @@ foreach my $cmd (@Commands) {
 
 __END__
 
-
 =pod
 
 
 =head1 NAME
 
-  correct_log.pl - Change username and email address in git history
+  correct_log.sh - Change username and email address in git history
 
 =head1 SYNOPSIS
 
-  correct_log.pl --old_email OLD_EMAIL --new_email NEW_EMAIL --new_user NEW_USER [--not_settings]
+  correct_log.sh --old_email OLD_EMAIL --new_email NEW_EMAIL --new_user NEW_USER [--not_settings]
 
 or, shorter:
 
-  correct_log.pl --oe OLD_EMAIL --ne NEW_EMAIL --nu NEW_USER --nc
+  correct_log.sh --oe OLD_EMAIL --ne NEW_EMAIL --nu NEW_USER --nc
 
 
 =head1 DESCRIPTION
@@ -97,11 +96,11 @@ repository, you can use this script to correct the Git log.
 
 Change to your git repo directory and run the scrpt like this:
 
-  correct_log.pl --old_email OLD_EMAIL --new_email NEW_EMAIL --new_user NEW_USER
+  correct_log.sh --old_email OLD_EMAIL --new_email NEW_EMAIL --new_user NEW_USER
 
 The options can be written shorter like this:
 
-  correct_log.pl --oe OLD_EMAIL --ne NEW_EMAIL --nu NEW_USER
+  correct_log.sh --oe OLD_EMAIL --ne NEW_EMAIL --nu NEW_USER
 
 By default, the script also stores C<NEW_EMAIL> and C<NEW_USER> cia C<git
 config credential.helper store>. This can be switched off by specifying the

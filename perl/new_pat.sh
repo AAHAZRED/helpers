@@ -30,7 +30,7 @@ __END__
 
 =head1 NAME
 
-new_pat.pl - Set new personal access token (PAT) in local git repo.
+new_pat.sh - Set new personal access token (PAT) in local git repo.
 
 
 =head1 SYNOPSIS
