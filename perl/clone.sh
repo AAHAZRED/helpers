@@ -29,4 +29,30 @@ set_creds($UName, $EMail);
 
 
 
+__END__
+
+
+=pod
+
+
+=head1 NAME
+
+clone.sh - clones a github repo and configs it (arg: github URL).
+
+
+=head1 SYNOPSIS
+
+  clone.sh URL
+
+=head1 DESCRIPTION
+
+Clones a github repo I<C<URL>> and configs it.
+
+
+=cut
+
+
+
+
+
 
