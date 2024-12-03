@@ -1,0 +1,9 @@
+# From ignore.txt
+/github.ini
+
+# emacs
+*~
+\#*\#
+.\#*
+
+
