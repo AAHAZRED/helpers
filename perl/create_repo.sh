@@ -24,3 +24,32 @@ print("\nYou may need to run set_pat.sh to be able to push\n");
 
 __END__
 
+
+
+__END__
+
+
+=pod
+
+
+=head1 NAME
+
+create_repo.sh - Create new git repo
+
+
+=head1 SYNOPSIS
+
+  create_repo.sh USERNAME
+
+
+=head1 DESCRIPTION
+
+Converts the current directory into a Git repository and configures it.
+C<USERNAME> must be known in the our github INI file.
+
+
+
+
+=cut
+
+

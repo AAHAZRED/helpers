@@ -47,6 +47,7 @@ clone.sh - clones a github repo and configs it (arg: github URL).
 =head1 DESCRIPTION
 
 Clones a github repo I<C<URL>> and configs it.
+You may then need to run C<new_pat.sh> in the local repo.
 
 
 =cut
